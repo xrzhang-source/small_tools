@@ -144,8 +144,27 @@ python 2 only
 
 -r: rm the title in the result files, default:not,only choose it when -t is choosed
 ```
-
-
+### this is a perl package for a gene expression table: #sum    average    mid    diff    fold    std   fano       zscore    pearson#
+```
+#$sum=sum(@array)                       # sum of the array
+#$average=average(@array)               # average num of the array
+#$mid=mid(@array)                       # middle num of the array
+#$quarter1=quarter1(@array)               # 1/4 num of the array
+#$quarter3=quarter3(@array)               # 3/4 num of the array
+#$diff=diff(@array)                     # maxnum-minnum
+#$fold=fold(@array)                     # maxnum/minnum
+#$min=min(@array)                       # min
+#$max=max(@array)                       # max
+#$std=std(@array)                       # standard deviation of the array
+#$fano=fano(@array)                       # standard deviation of the array
+#@zscore=zscore(@array)                 # transform to zscore
+#$pearson=pearson(\@array1,\@array2)    # pearson correlation of array1 and array2, be sure the input is pointer format
+#$one=one(@array)                                               # one of the element match the condition
+#$all=all(@array)                                               # all of the element match the condition
+#@lm=lm(\@array1,\@array2)              # lm
+#@gini=lm(@array)               # gini
+#$ttest=lm(\@array1,\@array2)                   # ttest
+```
 
 Contact: xrzhang0525@gmail.com 
 
